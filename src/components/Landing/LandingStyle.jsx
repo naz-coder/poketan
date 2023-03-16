@@ -98,14 +98,14 @@ export const AppModalOverlay = styled.div`
   outline: none;
 }
 
-.modal-container button {
+.head-section button {
   width: 5rem;
   height: 3rem;
   border-radius: 0 6px 0 0;
   border: 1px solid #222222;
   border-right: none;
   background-color: #222222;
-  color: #ffe5b4;
+  color: #ffffff;
   font-weight: 900;
   /* padding-top: 4px; */
   font-family: "Archivo Narrow", sans-serif;
@@ -116,12 +116,12 @@ export const AppModalOverlay = styled.div`
   font-size: 1.2rem;
 }
 
-.modal-container button:hover {
+.head-section button:hover {
   background-position: left bottom;
   cursor: pointer;
   opacity: 0.9;
   translate: 5s;
-  color: #ffffff;
+  color: #ffe5b4;
   background-color: #000000;
   border: 1px solid #000000;
 }
