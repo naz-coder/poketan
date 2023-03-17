@@ -15,7 +15,7 @@ export const TanListWrap = styled.div`
         font-size: 1rem;
         font-weight: 900;
         line-height: 1.4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         
     }
 
@@ -34,11 +34,11 @@ export const TanListWrap = styled.div`
     }
 
     .card-button{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3%;
+        
+        /* grid-template-columns: 1fr 1fr;
+        grid-gap: 3%; */
         /* padding: 0 27rem; */
-        margin-top: 0.6rem;
+        margin-top: 0.4rem;
 
     }
 
@@ -50,8 +50,8 @@ export const TanListWrap = styled.div`
         color: #ffffff;
         font-weight: 700;
         font-size: 0.9rem;
-        padding: 0.3rem 0.8rem;
-        margin-left: 1rem;
+        padding: 0.25rem 1rem;
+        margin: 2.5%;
         border-radius: 0.3rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
         
@@ -64,7 +64,6 @@ export const TanListWrap = styled.div`
         background-position: left bottom;
     }
 
-
     .card-button button.button-2{
         background-color: #c663cb;
         border: 1px solid #c663cb;
@@ -73,8 +72,8 @@ export const TanListWrap = styled.div`
         color: #ffffff;
         font-weight: 700;
         font-size: 0.9rem;
-        padding: 0.3rem 0.8rem;
-        margin-right: 1rem;
+        padding: 0.25rem 1rem;
+        margin: 2.5%;
         border-radius: 0.3rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
         
@@ -87,28 +86,41 @@ export const TanListWrap = styled.div`
         background-position: left bottom;
     }
 
-    @media (max-width: 768px) {
-        margin: 3rem 2rem;
-
-        .tan-image img{
-         height: auto;
-         width: 100%;
-         max-width: 215px;
-        }
-        
+/* MEDIA RESPONSIVENESS */
+@media (max-width: 900px){
+    /* .tan-number, .tan-name{
+    text-align: left;   
+    padding: 0 0.5rem;
+    }
+ */
+    .card-button{
+        /* grid-template-columns: 1fr;
+        padding: 0 10%; */
+    }
+}
+@media (max-width: 768px) {
+    margin: 3rem 2rem;
+    .tan-image img{
+     height: auto;
+     width: 100%;
+     max-width: 215px;
     }
 
-    @media (max-width: 425px) {
-        margin: 2.5rem 1rem;
-
-        .tan-image img{
-         height: auto;
-         width: 100%;
-         max-width: 215px;
-        }
-    }
-
-    @media (max-width: 320px) {
+    .card-button{
+        /* grid-template-columns: 1fr;
+        padding: 0 1vw; */
     }
     
+}
+@media (max-width: 425px) {
+    margin: 2.5rem 1rem;
+  
+    .tan-image img{
+     height: auto;
+     width: 100%;
+     max-width: 215px;
+    }
+}
+@media (max-width: 320px) {
+}
 `

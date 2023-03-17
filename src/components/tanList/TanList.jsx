@@ -8,7 +8,8 @@ const TanList = () => {
       <TanListWrap>
         {/* <div className='col-6 col-md-3'> */}
         <div className="">
-        <div className='col-6 col-sm-4'>
+        <div className='row'>
+          <div className='col-6 col-md-3'>
             <div className='tan-card'>
                 <div className='tan-image'>
                   <img src={tan1}/>
@@ -20,6 +21,8 @@ const TanList = () => {
                     <button className='button-2'>Poison</button>
                 </div>
             </div>
+          </div>
+          <div className='col-6 col-md-3'>
             <div className='tan-card'>
                 <div className='tan-image'>
                   <img src={tan1}/>
@@ -31,6 +34,8 @@ const TanList = () => {
                     <button className='button-2'>Poison</button>
                 </div>
             </div>
+          </div>
+          <div className='col-6 col-md-3'>
             <div className='tan-card'>
                 <div className='tan-image'>
                   <img src={tan1}/>
@@ -42,6 +47,8 @@ const TanList = () => {
                     <button className='button-2'>Poison</button>
                 </div>
             </div>
+          </div>
+          <div className='col-6 col-md-3'>
             <div className='tan-card'>
                 <div className='tan-image'>
                   <img src={tan1}/>
@@ -53,92 +60,8 @@ const TanList = () => {
                     <button className='button-2'>Poison</button>
                 </div>
             </div>
-            {/* <div className='tan-card'>
-                <div className='tan-image'>
-                  <img src={tan1}/>
-                </div>
-                <div className='tan-number'>#0001</div>
-                <div className='tan-name'>Bulbasaur</div>
-                <div className='card-button'>
-                    <button className='button-1'>Grass</button>
-                    <button className='button-2'>Poison</button>
-                </div>
-            </div>
-            <div className='tan-card'>
-                <div className='tan-image'>
-                  <img src={tan1}/>
-                </div>
-                <div className='tan-number'>#0001</div>
-                <div className='tan-name'>Bulbasaur</div>
-                <div className='card-button'>
-                    <button className='button-1'>Grass</button>
-                    <button className='button-2'>Poison</button>
-                </div>
-            </div>
-            <div className='tan-card'>
-                <div className='tan-image'>
-                  <img src={tan1}/>
-                </div>
-                <div className='tan-number'>#0001</div>
-                <div className='tan-name'>Bulbasaur</div>
-                <div className='card-button'>
-                    <button className='button-1'>Grass</button>
-                    <button className='button-2'>Poison</button>
-                </div>
-            </div>
-            <div className='tan-card'>
-                <div className='tan-image'>
-                  <img src={tan1}/>
-                </div>
-                <div className='tan-number'>#0001</div>
-                <div className='tan-name'>Bulbasaur</div>
-                <div className='card-button'>
-                    <button className='button-1'>Grass</button>
-                    <button className='button-2'>Poison</button>
-                </div>
-            </div> */}
-     
-                {/* <tr>
-                <th>
-                  <img src={tan1}/>
-                </th>
-                <td>#0001</td>
-                <td>Bulbasaur</td>
-                <td>
-                    <button>Grass</button>
-                    <button>Poison</button>
-                </td>
-            </tr><tr>
-                <th>
-                  <img src={tan1}/>
-                </th>
-                <td>#0001</td>
-                <td>Bulbasaur</td>
-                <td>
-                    <button>Grass</button>
-                    <button>Poison</button>
-                </td>
-            </tr><tr>
-                <th>
-                  <img src={tan1}/>
-                </th>
-                <td>#0001</td>
-                <td>Bulbasaur</td>
-                <td>
-                    <button>Grass</button>
-                    <button>Poison</button>
-                </td>
-            </tr><tr>
-                <th>
-                  <img src={tan1}/>
-                </th>
-                <td>#0001</td>
-                <td>Bulbasaur</td>
-                <td>
-                    <button>Grass</button>
-                    <button>Poison</button>
-                </td>
-            </tr> */}
+          </div>
+          
         </div>
         </div>
       </TanListWrap>
