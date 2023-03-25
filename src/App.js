@@ -1,4 +1,5 @@
 import Home from "./components/Landing/Landing"
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
