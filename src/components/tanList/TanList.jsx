@@ -8,9 +8,9 @@ const TanList = (props) => {
     <React.Fragment>
       <TanListWrap>
         <div className="">
-        <div className='row'>
+        <div className=''>
           {/* {props.map((data, index) => ())} */}
-          <div className='col-6 col-md-3' key={props.keyProps}>
+          <div className='' key={props.keyProps}>
             <div className='tan-card'>
                 <div className='tan-image'>
                   <img src={tan1} loading="lazy"/>

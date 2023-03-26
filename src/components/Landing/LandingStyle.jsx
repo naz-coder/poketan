@@ -27,8 +27,6 @@ export const AppModalOverlay = styled.div`
     padding: 25px 16px;
     /* font-family: 'Righteous', cursive; */
 
-
-
 .modal-container{
     /* background-image: url(${innerBackground}); */
     /* background-position: right bottom;
@@ -166,7 +164,7 @@ export const AppModalOverlay = styled.div`
 } */
 
 @media (max-width: 768px) {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     bottom: 0;
     right: 0;
@@ -181,7 +179,7 @@ export const AppModalOverlay = styled.div`
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     font-family: 'Righteous', cursive;
 
 .modal-container{

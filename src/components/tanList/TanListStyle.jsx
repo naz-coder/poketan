@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const TanListWrap = styled.div`
-    margin: 4rem 6rem;
+    margin: 15% 20%;
     /* padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1rem; */
 
     .tan-card{
-        /* background-color: #c5c5c5; */
         text-align: center;
         border-radius: 0.5rem;
         border: 1px solid #a8a6a6;
@@ -16,12 +15,11 @@ export const TanListWrap = styled.div`
         font-weight: 900;
         line-height: 1.4rem;
         margin-bottom: 3rem;
-        
+        width: 100%;
     }
 
     .tan-image{
         background-color: #a8a6a6;
-        /* border: 1px solid #a8a6a6; */
         border-radius: 0.5rem 0.5rem 0 0;  
         margin-bottom: 1rem;
         
@@ -33,8 +31,11 @@ export const TanListWrap = styled.div`
          max-width: 215px;
     }
 
+    .tan-name{
+        text-transform: capitalize;
+    }
+
     .card-button{
-        
         /* grid-template-columns: 1fr 1fr;
         grid-gap: 3%; */
         /* padding: 0 27rem; */
@@ -99,7 +100,8 @@ export const TanListWrap = styled.div`
     }
 }
 @media (max-width: 768px) {
-    margin: 3rem 2rem;
+    margin: 25% 5% 10% 5%;
+    /* margin: 3rem 2rem; */
     .tan-image img{
      height: auto;
      width: 100%;
@@ -113,7 +115,7 @@ export const TanListWrap = styled.div`
     
 }
 @media (max-width: 425px) {
-    margin: 2.5rem 1rem;
+    margin: 2.5rem 0.5rem;
   
     .tan-image img{
      height: auto;
