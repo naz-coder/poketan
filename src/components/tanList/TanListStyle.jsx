@@ -87,6 +87,7 @@ export const TanListWrap = styled.div`
         background-position: left bottom;
     }
 
+
 /* MEDIA RESPONSIVENESS */
 @media (max-width: 900px){
     /* .tan-number, .tan-name{
