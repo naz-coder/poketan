@@ -1,9 +1,20 @@
 import styled from "styled-components";
 
-export const TanListWrap = styled.div`
-    margin: 15% 20%;
-    /* padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1rem; */
+export const PokiesWrap = styled.div`
+    margin: 4rem 6rem;
+
+    .pokie-card{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-gap: 5%; */
+      grid-column-gap: 5%;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    .pokie-card:hover{
+      cursor: pointer;
+    }
 
     .tan-card{
         text-align: center;
@@ -14,15 +25,17 @@ export const TanListWrap = styled.div`
         font-size: 1rem;
         font-weight: 900;
         line-height: 1.4rem;
-        margin-bottom: 3rem;
-        width: 100%;
+        margin-bottom: 5rem;
     }
 
     .tan-image{
         background-color: #a8a6a6;
         border-radius: 0.5rem 0.5rem 0 0;  
         margin-bottom: 1rem;
-        
+    }
+
+    .tan-image:hover{
+      opacity: 0.9;
     }
 
     .tan-image img{
@@ -32,13 +45,10 @@ export const TanListWrap = styled.div`
     }
 
     .tan-name{
-        text-transform: capitalize;
+      text-transform: capitalize;
     }
 
     .card-button{
-        /* grid-template-columns: 1fr 1fr;
-        grid-gap: 3%; */
-        /* padding: 0 27rem; */
         margin-top: 0.4rem;
 
     }
@@ -87,22 +97,29 @@ export const TanListWrap = styled.div`
         background-position: left bottom;
     }
 
-
 /* MEDIA RESPONSIVENESS */
-@media (max-width: 900px){
-    /* .tan-number, .tan-name{
-    text-align: left;   
-    padding: 0 0.5rem;
-    }
- */
-    .card-button{
-        /* grid-template-columns: 1fr;
-        padding: 0 10%; */
-    }
+@media (max-width: 1024px){
+  margin: 4rem 1rem;
 }
+
+@media (max-width: 960px) {
+  .pokie-card{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 5rem;
+    }
+  
+}
+
 @media (max-width: 768px) {
-    margin: 25% 5% 10% 5%;
-    /* margin: 3rem 2rem; */
+    margin: 3rem 2rem;
+
+    .pokie-card{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+    }
+
     .tan-image img{
      height: auto;
      width: 100%;
@@ -115,9 +132,15 @@ export const TanListWrap = styled.div`
     }
     
 }
-@media (max-width: 425px) {
-    margin: 2.5rem 0.5rem;
+@media (max-width: 600px) {
+    margin: 2.5rem 1rem;
   
+    .pokie-card{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 5rem;
+    }
+
     .tan-image img{
      height: auto;
      width: 100%;

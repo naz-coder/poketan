@@ -1,12 +1,14 @@
-import Home from "./components/Landing/Landing"
-import 'bootstrap/dist/css/bootstrap.css';
+import Home from "./pages/home/Home"
+import {BrowserRouter as  Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-      {/* <h2>Play Here...</h2> */}
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        {/* <Route exact path="/pokieDetails:name" element={<PokieDetails/>}/> */}
+      </Routes>
+    </Router>
   );
 }
 
