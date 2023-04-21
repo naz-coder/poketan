@@ -97,6 +97,46 @@ export const PokiesWrap = styled.div`
         background-position: left bottom;
     }
 
+    .paginate{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5%;
+    }
+
+    .page-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-btn button {
+    /* width: 5rem; */
+    /* height: 3rem; */
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: 1px solid #222222;
+    border-right: none;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Archivo Narrow", sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    font-size: 1.2rem;
+  }
+  
+  .page-btn button:hover {
+    background-position: left bottom;
+    cursor: pointer;
+    opacity: 0.9;
+    translate: 5s;
+    color: #ffe5b4;
+    background-color: #000000;
+    border: 1px solid #000000;
+  }
+
 /* MEDIA RESPONSIVENESS */
 @media (max-width: 1024px){
   margin: 4rem 1rem;
@@ -147,6 +187,16 @@ export const PokiesWrap = styled.div`
      max-width: 215px;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+  .paginate{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5%;
+  }
+
+  .page-btn{
+    margin-bottom: 1rem;
+  }
+
 }
 `

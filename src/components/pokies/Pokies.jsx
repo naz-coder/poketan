@@ -66,28 +66,43 @@ const getPokies = () => {
   return (
     <React.Fragment>
       <PokiesWrap>
-          <SearchBar/>
-          <div className='pokie-card' >
+        <div className="pokies-outter" key={child}>
+          {pagedata ? (
+            <div className="mains">
+              <SearchBar/>
+              <div className='pokie-card' >
             {pagedata.map((pokie) => {
-              return(
-                <div className='tan-card' key={pokie.id}>
+                return(
+                  <div className='tan-card' key={pokie.id}>
                 <div className='tan-image'>
                   <img src={pokie.url} alt={pokie.name}/>
                 </div>
-                <div className='tan-number'>00{pokie.id}</div>
+                {/* <div className='tan-number'>00{pokie.id}</div> */}
                 <div className='tan-name'>{pokie.name}</div>
                 <div className='card-button'>
                     <button className='button-1'>Grass</button>
                     <button className='button-2'>Poison</button>
                 </div>
-              </div>
-              )
+                </div>
+                )
             })}
           </div>
-            <div className='page-btn'>
-              <button onClick={previousPage}>{'<<Prev'}</button>
-              <button onClick={nextPage}>{'Next>>'}</button>
-            </div>
+          <div className="paginate">
+            {offset > 0 ? (
+              <div className='page-btn'><button  onClick={previousPage}>{'<< Prev'}</button></div>
+            ):(<div></div>)
+            }
+            {offset < 1000 ? (
+              <div className='page-btn'><button onClick={nextPage}>{'Next >>'}</button></div>
+            ):(<div></div>)
+            }
+          </div>
+          </div>
+          ):(
+            <h1>{"Loading"}</h1>
+          )
+          }
+        </div>
       </PokiesWrap>
     </React.Fragment>
   )
