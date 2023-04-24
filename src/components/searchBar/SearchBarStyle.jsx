@@ -18,6 +18,7 @@ export const SearchBarWrap = styled.div`
     padding-left: 0.5rem;
     font-weight: 900;
     font-size: 1.2rem;
+    text-align: center;
     font-family: "Archivo Narrow", sans-serif;
     font-family: "Fira Sans", sans-serif;
     font-family: "Josefin Sans", sans-serif;

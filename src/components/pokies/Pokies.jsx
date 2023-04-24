@@ -1,9 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {Suspense, useEffect, useState} from 'react';
 import axios from 'axios';
 import {PokiesWrap} from "../pokies/PokiesStyle"
 import SearchBar from '../searchBar/SearchBar';
-
-// const PokieCard = lazy (() => import ("../"))
 
 // Pagination condition
 var offset = 0;
@@ -20,6 +18,8 @@ const Pokies = () => {
   const [pagedata, setPagedata] = useState([]);
   const [child, setChild] = useState(1);
   const update = () => {setChild(Math.random())};
+  const [searchData, setSearchData] = useState("");
+  const [filteredPokies, setFilteredPokies] = useState([]);
 
   // Page buttons logic
   const previousPage = () => {
@@ -55,13 +55,27 @@ const getPokies = () => {
       newPokies.push(pokieObject);
     })
     setPagedata(newPokies);
+    setFilteredPokies(newPokies);
     update();
   }}).catch((error) => {
     console.log(error);
   })
  }; 
- 
  useEffect(() => {getPokies()}, [])
+
+  // Search Function
+ const pokieSearch = (value) =>{
+  setSearchData(value);
+ };
+
+  const searchHandler = (e) => {
+    console.log(e);
+    const results = pagedata.filter(pokie => {
+      if(e === " ") return pagedata
+      return pokie.name.toLowerCase().includes(e.toLowerCase())
+    })
+    setFilteredPokies(results);
+  }
 
   return (
     <React.Fragment>
@@ -69,20 +83,22 @@ const getPokies = () => {
         <div className="pokies-outter" key={child}>
           {pagedata ? (
             <div className="mains">
-              <SearchBar/>
+              <SearchBar onSearch={searchHandler}/>
               <div className='pokie-card' >
-            {pagedata.map((pokie) => {
+            {filteredPokies.map((pokie) => {
                 return(
                   <div className='tan-card' key={pokie.id}>
                 <div className='tan-image'>
-                  <img src={pokie.url} alt={pokie.name}/>
+                  <Suspense fallback={<h1>Loading...</h1>}>
+                    <img src={pokie.url} alt={pokie.name}/>
+                  </Suspense>
                 </div>
                 {/* <div className='tan-number'>00{pokie.id}</div> */}
                 <div className='tan-name'>{pokie.name}</div>
-                <div className='card-button'>
+                {/* <div className='card-button'>
                     <button className='button-1'>Grass</button>
                     <button className='button-2'>Poison</button>
-                </div>
+                </div> */}
                 </div>
                 )
             })}

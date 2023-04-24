@@ -1,36 +1,28 @@
 import React, { useState } from 'react'
 import {SearchBarWrap} from "../searchBar/SearchBarStyle"
-import { useNavigate } from 'react-router-dom'
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
   const [searchItem, setSearchItem] = useState("");
 
-  const searchInputHandler = (e) => {
-    setSearchItem(e.target.value)
+  const inputChangeHandler = (e) => {
+    const searchItem = e.target.value;
+    setSearchItem(searchItem);
+    onSearch(searchItem);
   }
 
-  const navigate = useNavigate();
-  const formHandler = () => {
-    navigate("/pokie/" + searchItem.toLowerCase())
-  }
 
   return (
-    <React.Fragment>
         <SearchBarWrap>
-        <form onSubmit={formHandler}>
-          {" "}
         <div className='poketan-search'>
           <input 
             type='text'
             placeholder='Pokie Name or Code' 
             value={searchItem}
-            onChange={searchInputHandler}
+            onChange={inputChangeHandler}
           />
-          <button type='submit'>Search</button>
+          {/* <button onClick={() => onSearch(searchItem)}>Search</button> */}
           </div>
-          </form>
         </SearchBarWrap>
-    </React.Fragment>
   )
 }
 
