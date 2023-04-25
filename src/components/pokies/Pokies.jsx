@@ -95,10 +95,6 @@ const getPokies = () => {
                 </div>
                 {/* <div className='tan-number'>00{pokie.id}</div> */}
                 <div className='tan-name'>{pokie.name}</div>
-                {/* <div className='card-button'>
-                    <button className='button-1'>Grass</button>
-                    <button className='button-2'>Poison</button>
-                </div> */}
                 </div>
                 )
             })}
