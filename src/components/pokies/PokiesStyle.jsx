@@ -6,7 +6,6 @@ export const PokiesWrap = styled.div`
     .pokie-card{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      /* grid-gap: 5%; */
       grid-column-gap: 5%;
       margin-top: 5rem;
       margin-bottom: 5rem;
@@ -26,6 +25,17 @@ export const PokiesWrap = styled.div`
         font-weight: 900;
         line-height: 1.4rem;
         margin-bottom: 5rem;
+        animation: pokieAnimation 1s ease-in;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes pokieAnimation {
+      0%{transform: scale(0, 0.25);}
+      50%{transform: scale(1, 0.25)}
+    }
+
+    .tan-card:hover{
+        opacity: 0.8;
     }
 
     .tan-image{
@@ -46,6 +56,11 @@ export const PokiesWrap = styled.div`
 
     .tan-name{
       text-transform: capitalize;
+    }
+
+    .pokie-details-link{
+      text-decoration: none;
+      color: #000000;
     }
 
     .card-button{

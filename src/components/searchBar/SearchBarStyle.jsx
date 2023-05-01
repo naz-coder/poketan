@@ -6,13 +6,12 @@ export const SearchBarWrap = styled.div`
     align-items: center;
     justify-content: center;
     display: flex;
-  
   }
   
   .poketan-search input {
     width: 50%;
     height: 3rem;
-    border-radius: 0 0 0 8px;
+    border-radius: 0 8px 0 8px;
     border: 1px solid #aeb1b3;
     padding-bottom: 2px;
     padding-left: 0.5rem;
@@ -23,7 +22,6 @@ export const SearchBarWrap = styled.div`
     font-family: "Fira Sans", sans-serif;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Zen Kurenaido", sans-serif;
-  
   }
   
   .poketan-search input::placeholder {
@@ -32,6 +30,7 @@ export const SearchBarWrap = styled.div`
   
   .poketan-search input:focus {
     outline: none;
+    background-color:#dcdef1;
   }
   
   .poketan-search button {
