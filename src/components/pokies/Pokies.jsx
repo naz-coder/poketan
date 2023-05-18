@@ -108,11 +108,11 @@ const getPokies = () => {
           </div>
           <div className="paginate">
             {offset > 0 ? (
-              <div className='page-btn'><button  onClick={previousPage}>{'<< Prev'}</button></div>
+              <div className='page-btn'><button  onClick={previousPage}>&#8617; {'Prev'}</button></div>
             ):(<div></div>)
             }
             {offset < 1000 ? (
-              <div className='page-btn'><button onClick={nextPage}>{'Next >>'}</button></div>
+              <div className='page-btn'><button onClick={nextPage}>{'Next'} &#8618;</button></div>
             ):(<div></div>)
             }
           </div>

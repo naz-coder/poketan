@@ -16,17 +16,19 @@ export const PokiesWrap = styled.div`
     }
 
     .tan-card{
-        text-align: center;
-        border-radius: 0.5rem;
-        border: 1px solid #a8a6a6;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1.5rem;
-        color: #10062c;
-        font-size: 1rem;
-        font-weight: 900;
-        line-height: 1.4rem;
-        margin-bottom: 5rem;
-        animation: pokieAnimation 1s ease-in;
-        animation-iteration-count: 1;
+      text-align: center;
+      border-radius: 0.5rem;
+      border: 1px solid #a8a6a6;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1.5rem;
+      color: #10062c;
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.4rem;
+      margin-bottom: 5rem;
+      animation: pokieAnimation 1s ease-in;
+      animation-iteration-count: 1;
+      background-position: right bottom;
+      transition: all 0.3s ease-in-out;
     }
 
     @keyframes pokieAnimation {
@@ -36,6 +38,7 @@ export const PokiesWrap = styled.div`
 
     .tan-card:hover{
         opacity: 0.8;
+        transform: scale(1.05);
     }
 
     .tan-image{
@@ -64,23 +67,21 @@ export const PokiesWrap = styled.div`
     }
 
     .card-button{
-        margin-top: 0.4rem;
-
+      margin-top: 0.4rem;
     }
 
     .card-button button.button-1{
-        background-color: #83d744;
-        border: 1px solid #83d744;
-        background-position: right bottom;
-        transition: all 0.5s ease-in-out;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 0.9rem;
-        padding: 0.25rem 1rem;
-        margin: 2.5%;
-        border-radius: 0.3rem;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
-        
+      background-color: #83d744;
+      border: 1px solid #83d744;
+      background-position: right bottom;
+      transition: all 0.5s ease-in-out;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.25rem 1rem;
+      margin: 2.5%;
+      border-radius: 0.3rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
     }
 
     .card-button button.button-1:hover{
@@ -102,7 +103,6 @@ export const PokiesWrap = styled.div`
         margin: 2.5%;
         border-radius: 0.3rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
-        
     }
 
     .card-button button.button-2:hover{
@@ -163,7 +163,6 @@ export const PokiesWrap = styled.div`
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 5rem;
     }
-  
 }
 
 @media (max-width: 768px) {
@@ -179,14 +178,9 @@ export const PokiesWrap = styled.div`
      height: auto;
      width: 100%;
      max-width: 215px;
-    }
-
-    .card-button{
-        /* grid-template-columns: 1fr;
-        padding: 0 1vw; */
-    }
-    
+    }    
 }
+
 @media (max-width: 600px) {
     margin: 2.5rem 1rem;
   
@@ -202,6 +196,7 @@ export const PokiesWrap = styled.div`
      max-width: 215px;
     }
 }
+
 @media (max-width: 425px) {
   .paginate{
       display: grid;

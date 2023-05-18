@@ -10,7 +10,6 @@ const SearchBar = ({onSearch}) => {
     onSearch(searchItem);
   }
 
-
   return (
         <SearchBarWrap>
         <div className='poketan-search'>
@@ -20,8 +19,9 @@ const SearchBar = ({onSearch}) => {
             value={searchItem}
             onChange={inputChangeHandler}
           />
+          {/* <a href='./PokieDetails'><button>Search</button></a> */}
           {/* <button onClick={() => onSearch(searchItem)}>Search</button> */}
-          </div>
+        </div>
         </SearchBarWrap>
   )
 }
