@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AboutPokie from '../../components/aboutPokie/AboutPokie';
 import PokieStat from '../../components/pokieStat/PokieStat';
+import {PokieDetailsStyle} from "../pokieDetails/PokieDetailsStyle"
 
 function zeroCount(i) {
   if (i > 9 && i <= 99) {
@@ -35,24 +36,31 @@ const PokieDetails =() => {
     } 
     getPokemon();
   }, [])
-
-  
-      return (
+  return (
+    <React.Fragment>
+      <PokieDetailsStyle>
+      <div>
+        <div className="pokie-description">
         <div>
-          <div className="container">
-            <div className="imageCard">
-              <p>{pokemon.name}</p>
-              <img
-                src={"https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/" + zeroCount(pokemon.id) + pokemon.id + ".png"}
-                alt={"null"}
-              />
-            </div>
-            <div className="detailsCard">
-              <AboutPokie pokemon={pokemon}/>
-              <PokieStat stats={pokemon.stats}/>
-            </div>
-          </div>
+        <p className="pokie-name">{pokemon.name}</p>
+        <hr></hr>
         </div>
-      );
+        <div className="detailsCard">
+        <img
+            src={"https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/" + zeroCount(pokemon.id) + pokemon.id + ".png"}
+            alt={"null"}
+            className="pokie-details-image"
+          />
+        <div>
+          <AboutPokie pokemon={pokemon}/>
+          <PokieStat stats={pokemon.stats}/>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </PokieDetailsStyle>
+    </React.Fragment>
+  );
 }
 export default PokieDetails;

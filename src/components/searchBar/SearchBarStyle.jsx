@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SearchBarWrap = styled.div`
-    
+    margin-top: 9rem;
 .poketan-search{
     align-items: center;
     justify-content: center;

@@ -1,9 +1,8 @@
 import React from 'react'
-import mainLogo from '../../assets/mainLogo.png'
-import appName from '../../assets/appName.png'
 import Pokies from "../../components/pokies/Pokies";
 import { HomePageWrap } from '../home/HomeStyle';
-
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
   return (
@@ -11,10 +10,6 @@ const Home = () => {
         <HomePageWrap>
         <div className='modal-container'>
           <div className='head-section'>
-          <div className='app-header'>
-            <img src={mainLogo} className="app-logo"/> 
-            <img src={appName} className="app-name"/> 
-          </div>
           <Pokies />
           </div>
         </div>

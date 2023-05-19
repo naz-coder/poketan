@@ -1,7 +1,68 @@
 import styled from "styled-components";
 
-export const PokieDetailsWrap = styled.div`
-   background-color: yellowgreen;
-   color: brown;
+export const PokieDetailsStyle = styled.div`
+   margin: 9rem 5rem 3rem 5rem;
+
+   hr{
+      width: 3.5rem;
+      border: 1px solid #8da4c4;
+   }
+   
+   .pokie-description{
+      padding: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid #18345C;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1.5rem;
+      color: #10062c;
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.4rem;
+      margin-bottom: 5rem;
+      background-position: right bottom;
+      transition: all 0.5s ease-in-out;
+      background-color: #18345C;
+      color: #ddebff;
+   }
+
+   .pokie-name{
+      text-transform: capitalize;
+      font-weight: 900;
+      color: #8da4c4;
+      font-size: 2rem;
+      text-align: center;
+   }
+
+   .pokie-details-image{
+      max-width: 550px;
+      width: 100%;
+      height: auto;
+      /* animation */
+      --g:#0000 ,#000 .5deg 90deg,#0000 91deg;
+  --m:
+    conic-gradient(from 45deg ,var(--g)) 20px 0  no-repeat,
+    conic-gradient(from 135deg,var(--g)) 0 20px  no-repeat,
+    conic-gradient(from 225deg,var(--g)) -20px 0 no-repeat,
+    conic-gradient(from 315deg,var(--g)) 0 -20px no-repeat;
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  transition: .3s linear;
+  filter: grayscale(.5);
+  cursor: pointer;
+   }
+
+   .pokie-details-image:hover{
+      opacity: 0.8;
+      /* transform: scale(1.05); */
+      -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+  filter: grayscale(0);
+   }
+
+   .detailsCard{
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5%;
+   }
    
 `

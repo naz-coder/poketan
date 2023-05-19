@@ -125,8 +125,6 @@ export const PokiesWrap = styled.div`
     }
 
     .page-btn button {
-    /* width: 5rem; */
-    /* height: 3rem; */
     padding: 1rem 2rem;
     border-radius: 6px;
     border: 1px solid #222222;

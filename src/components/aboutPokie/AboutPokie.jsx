@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
+import {AboutPokieStyle} from "../aboutPokie/AboutPokieStyle"
 
 const AboutPokie = ({pokemon}) => {
     const [able, setAble] = useState("");
@@ -10,8 +11,9 @@ const AboutPokie = ({pokemon}) => {
     }, [abilities]);
   
     return (
-      <div className='info-section'>
-          <h3>About Pokies</h3>
+      <AboutPokieStyle>
+       <div className='info-section'>
+          <h3  className='section-title'>About Pokies</h3>
           <ul>
             <li><b>{"Abilities: "}</b>{able}</li>
             <li><b>{"Height: "}</b>{height + "cm"}</li>
@@ -19,7 +21,8 @@ const AboutPokie = ({pokemon}) => {
             <li><b>{"Base Experience: "}</b>{base_experience}</li>
             <li><b>{"Order: "}</b>{order}</li>
           </ul>
-      </div>
+        </div>
+      </AboutPokieStyle>
     );
 }
 

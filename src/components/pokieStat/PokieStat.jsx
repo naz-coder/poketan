@@ -1,10 +1,12 @@
 import React from 'react'
+import {PokieStatStyle} from "../pokieStat/PokieStatStyle"
 
 const PokieStat = (props) => {
   const {stats} = props
   return (
-    <div className='info-section'>
-        <h3>Pokie Statistics</h3>
+    <PokieStatStyle>
+      <div className='info-section'>
+        <h3 className='section-title'>Pokie Statistics</h3>
         {stats? (
           <ul>{stats.map((stat, index) => (
             <li key={index}>
@@ -16,6 +18,7 @@ const PokieStat = (props) => {
           <h1>{"Not available"}</h1>
         )}
     </div>
+    </PokieStatStyle>
   )
 }
 
