@@ -79,6 +79,9 @@ a{
   margin-left: 0.8rem;
 }
 
+.whatsapp, .twitter, .github, .email, .linkedin{
+  margin-top: 1rem;
+}
 .whatsapp:hover {
   color: #00ff00;
 }
