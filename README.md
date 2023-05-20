@@ -24,4 +24,4 @@ You may also see any lint errors in the console.
 `https://poketan.vercel.app/`
 
 ### The Core Team
-`Chinaza Favour Anajemba`
+`Favour Chinaza Anajemba`
