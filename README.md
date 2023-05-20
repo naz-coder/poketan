@@ -21,7 +21,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### Hosting
-`https://poketan.vercel.app/`
+https://poketan.vercel.app/
 
 ### The Core Team
 `Favour Chinaza Anajemba`
