@@ -33,27 +33,4 @@ export const HomePageWrap = styled.div`
   max-width: 105px;
 
 }
-    .copyright{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1%;
-        padding: 2rem 4rem 0 4rem;
-    }
-
-    .copyright:hover{
-        opacity: 0.9;
-        cursor: pointer;
-    }
-
-    .copyright p{
-        font-size: 0.85rem;
-        margin-top: -0.1rem;
-        color: #f0daed;
-    }
-
-    .copyright img{
-        width: 100%;
-        max-width: 100px;
-        height: auto;
-    }
 `

@@ -4,7 +4,8 @@ import mainLogo from '../../assets/mainLogo.png'
 import appName from '../../assets/appName.png'
 import {SlSocialTwitter} from "react-icons/sl"
 import {FaWhatsapp, FaLinkedin, FaGithub} from "react-icons/fa"
-import {TfiEmail} from "react-icons/tfi"
+import {TfiEmail, TfiLocationPin} from "react-icons/tfi"
+import {BsSendCheck} from "react-icons/bs"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -19,11 +20,13 @@ const Footer = () => {
           <img src={appName} alt="Logo" className="app-name"></img>
         </div>
         </Link>
-        <div className="foot_item">
-          <p>Visit Our Website</p>
+        <a href="https://github.com/naz-coder">
+        <div className="foot_item our-portfolio">
+          <BsSendCheck className="portfolio"/><p>Visit Our Website</p>
         </div>
+        </a>
         <div className="foot_item contact-us">
-          <p>Contact us: FCT - Abuja, Nigeria - (+234) 8167265619</p>
+        <TfiLocationPin className="location-icon"/><p>FCT-Abuja, Nigeria - (+234) 8167265619</p>
         </div>
         <div className="foot_item">
           <div className="social_icons">

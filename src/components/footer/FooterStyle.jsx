@@ -7,7 +7,7 @@ export const FooterWrap = styled.div`
   color: #ffffff;
   padding: 25px 10px 10px 10px;
   font-size: 12px;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .foot_flex {
   display: flex;
@@ -22,15 +22,15 @@ export const FooterWrap = styled.div`
 }
 
 .app-logo{
-  width: 50px;
+  width: 25px;
   height: auto;
   max-width: 100%;
   margin-left: 10px;
 }
 
 .app-name{
-    width: 6rem;
-    height: 2rem;
+    width: 5.5rem;
+    height: 1.7rem;
     margin-left: 10px;
 }
 
@@ -54,13 +54,18 @@ export const FooterWrap = styled.div`
   padding: 0 7px 0 7px;
   margin-bottom: 15px;
   padding-top: 1px;
+  font-size: 1rem;
 }
 
 p.last_p {
   border-right: none;
 }
 
-.social_icons {
+.location-icon, .portfolio{
+  margin-top: 1rem;
+}
+
+.social_icons, .contact-us, .our-portfolio{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,11 +73,10 @@ p.last_p {
   font-size: 1.2rem;
 }
 
-.social_icons a{
+a{
   text-decoration: none;
   color: #ffffff;
   margin-left: 0.8rem;
-
 }
 
 .whatsapp:hover {
@@ -99,7 +103,7 @@ p.last_p {
   padding-top: 10px;
   text-align: center;
   font-weight: 900;
-  font-size: 10px;
+  font-size: 1rem;
   color: #ffffff;
   border-top: #bdc2ca;
 }
@@ -120,21 +124,15 @@ p.last_p {
   margin-bottom: 1rem;
 }
 
+.our-portfolio{
+  margin-bottom: -1rem;
+}
+
 }
 
 @media (max-width: 425px) {
   .foot_item p {
   padding: 0 1vw 0 1vw;
-}
-
-.sm_contact{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.pipe-txt{
-  display: none;
 }
 }
 

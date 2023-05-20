@@ -6,7 +6,7 @@ export const PokieStatStyle = styled.div`
    
    .section-title{
       text-transform: capitalize;
-      font-weight: 500;
+      font-weight:  800;
       color: #ddebff;
       font-size: 2rem;
    }

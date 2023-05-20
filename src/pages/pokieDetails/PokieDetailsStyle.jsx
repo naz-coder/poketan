@@ -6,15 +6,14 @@ export const PokieDetailsStyle = styled.div`
    hr{
       width: 3.5rem;
       border: 1px solid #8da4c4;
+      margin-top: -1rem;
    }
    
    .pokie-description{
-      /* padding: 2rem 2rem 5rem 2rem; */
       padding: 2rem;
       border-radius: 0.5rem;
       border: 1px solid #18345C;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        padding-bottom: 1.5rem;
-      color: #10062c;
       font-size: 1rem;
       font-weight: 900;
       line-height: 1.4rem;
@@ -29,7 +28,7 @@ export const PokieDetailsStyle = styled.div`
       text-transform: capitalize;
       font-weight: 900;
       color: #8da4c4;
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
    }
 

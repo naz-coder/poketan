@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.div`
-/* margin-top: 2rem; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+
 .app-header{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -15,7 +15,6 @@ export const HeaderStyle = styled.div`
   justify-content: center;
   display: flex;
   margin-top: 2rem;
-
 }
 
 .app-header:hover{
