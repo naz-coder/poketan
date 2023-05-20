@@ -33,8 +33,6 @@ export const HomePageWrap = styled.div`
   max-width: 105px;
 
 }
-
-
     .copyright{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -58,51 +56,4 @@ export const HomePageWrap = styled.div`
         max-width: 100px;
         height: auto;
     }
-
-
-/* @media (max-width: 425px) {
-  .modal-container{
-    padding: 25px 3px;
-    max-width: 690px;
-    border-radius: 0.5rem;
-} 
-
-.modal-container input {
-  width: 70%;
-  height: 2.2rem;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.modal-container button {
-  width: 4.5rem;
-  height: 2.2rem;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-} */
-
-/* @media (max-width: 320px) {
-  .modal-container{
-    padding: 25px 7px;
-    max-width: 690px;
-} 
-
-.modal-container input {
-  width: 70%;
-  height: 2.2rem;
-  font-weight: 500;
-}
-
-.modal-container button {
-  width: 4.5rem;
-  height: 2.2rem;
-}
-
-  .modal-container button.hidden {
-    display: block;
-  }
-} */
-
 `

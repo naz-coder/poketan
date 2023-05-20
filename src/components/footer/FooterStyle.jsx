@@ -15,6 +15,12 @@ export const FooterWrap = styled.div`
   justify-content: space-evenly;
 }
 
+.foot_item-logo{
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .app-logo{
   width: 50px;
   height: auto;
@@ -42,11 +48,9 @@ export const FooterWrap = styled.div`
 
 .foot_item:hover{
   cursor: pointer;
-  /* font-weight: 900; */
 }
 
 .foot_item p {
-  border-right: 1px solid #d9dad6;
   padding: 0 7px 0 7px;
   margin-bottom: 15px;
   padding-top: 1px;
@@ -67,7 +71,7 @@ p.last_p {
 .social_icons a{
   text-decoration: none;
   color: #ffffff;
-  margin-left: 0.6rem;
+  margin-left: 0.8rem;
 
 }
 
@@ -112,6 +116,10 @@ p.last_p {
     align-items: center;
     text-align: center;
   }
+  .foot_item-logo{
+  margin-bottom: 1rem;
+}
+
 }
 
 @media (max-width: 425px) {

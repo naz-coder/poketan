@@ -46,11 +46,13 @@ const PokieDetails =() => {
         <hr></hr>
         </div>
         <div className="detailsCard">
+        <div className="pokie-details-image-holder">
         <img
             src={"https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/" + zeroCount(pokemon.id) + pokemon.id + ".png"}
-            alt={"null"}
+            alt={"Pokie Image"}
             className="pokie-details-image"
           />
+        </div>
         <div>
           <AboutPokie pokemon={pokemon}/>
           <PokieStat stats={pokemon.stats}/>

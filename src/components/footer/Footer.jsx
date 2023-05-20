@@ -5,6 +5,7 @@ import appName from '../../assets/appName.png'
 import {SlSocialTwitter} from "react-icons/sl"
 import {FaWhatsapp, FaLinkedin, FaGithub} from "react-icons/fa"
 import {TfiEmail} from "react-icons/tfi"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -12,17 +13,17 @@ const Footer = () => {
     <FooterWrap>
       <div  className="foot">
       <div className="foot_flex">
-        <div className="foot_item">
+        <Link to="/">
+        <div className="foot_item-logo">
           <img src={mainLogo} alt="Logo" className="app-logo"></img>
           <img src={appName} alt="Logo" className="app-name"></img>
         </div>
+        </Link>
         <div className="foot_item">
-          <p>Portforlio</p>
-          <p className="last_p">About Us</p>
+          <p>Visit Our Website</p>
         </div>
         <div className="foot_item contact-us">
-          <p>FCT - Abuja, Nigeria</p>
-          <p className="last_p"><span className="sm_contact"><span className="sm_contact_1_mobile">Naza: (+234) 8167265619</span><span className="sm_contact_2_mobile"> <span className="pipe-txt"></span></span></span></p>
+          <p>Contact us: FCT - Abuja, Nigeria - (+234) 8167265619</p>
         </div>
         <div className="foot_item">
           <div className="social_icons">

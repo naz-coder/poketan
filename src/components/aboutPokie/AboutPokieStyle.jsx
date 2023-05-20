@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutPokieStyle = styled.div`
-   /* margin: 3rem 5rem; */
     .section-title{
       text-transform: capitalize;
       font-weight: 500;
@@ -16,4 +15,16 @@ export const AboutPokieStyle = styled.div`
     text-transform: capitalize;
    }
    
+   /* MEDIA RESPONSIVENESS */
+@media (max-width: 600px) {
+   .section-title{
+      font-size: 1.5rem;
+   }
+
+   ul li{
+    font-size: 1rem;
+    line-height: 2rem;
+   }
+}
+
 `

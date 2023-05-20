@@ -6,7 +6,7 @@ export const PokiesWrap = styled.div`
     .pokie-card{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 5%;
+      grid-column-gap: 2.5%;
       margin-top: 5rem;
       margin-bottom: 5rem;
     }
@@ -118,13 +118,13 @@ export const PokiesWrap = styled.div`
       grid-gap: 5%;
     }
 
-    .page-btn{
+    .page-btn-prev, .page-btn-next{
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .page-btn button {
+    .page-btn-prev button, .page-btn-next button {
     padding: 1rem 2rem;
     border-radius: 6px;
     border: 1px solid #222222;
@@ -139,8 +139,9 @@ export const PokiesWrap = styled.div`
     transition: all 0.5s ease-out;
     font-size: 1.2rem;
   }
+
   
-  .page-btn button:hover {
+  .page-btn-prev button:hover, .page-btn-next button:hover {
     background-position: left bottom;
     cursor: pointer;
     opacity: 0.9;
@@ -180,7 +181,7 @@ export const PokiesWrap = styled.div`
 }
 
 @media (max-width: 600px) {
-    margin: 2.5rem 1rem;
+    margin: 1rem 1rem 2.5rem 1rem;
   
     .pokie-card{
       display: grid;
@@ -193,6 +194,8 @@ export const PokiesWrap = styled.div`
      width: 100%;
      max-width: 215px;
     }
+
+
 }
 
 @media (max-width: 425px) {
@@ -202,9 +205,10 @@ export const PokiesWrap = styled.div`
       grid-gap: 5%;
   }
 
-  .page-btn{
-    margin-bottom: 1rem;
+  .page-btn-prev{
+    margin-top: -6rem;
   }
+
 
 }
 `

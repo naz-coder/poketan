@@ -19,8 +19,6 @@ const SearchBar = ({onSearch}) => {
             value={searchItem}
             onChange={inputChangeHandler}
           />
-          {/* <a href='./PokieDetails'><button>Search</button></a> */}
-          {/* <button onClick={() => onSearch(searchItem)}>Search</button> */}
         </div>
         </SearchBarWrap>
   )
