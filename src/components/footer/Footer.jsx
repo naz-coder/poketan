@@ -30,11 +30,11 @@ const Footer = () => {
         </div>
         <div className="foot_item">
           <div className="social_icons">
-            <a href="https://wa.me/2348167265619"><FaWhatsapp className="whatsapp"/></a>
-            <a href="https://www.twitter.com/TechSiz"><SlSocialTwitter className="twitter" /></a>
-            <a href="https://github.com/naz-coder"><FaGithub className="github"/></a>
-            <a href="mailto:nazanajemba@gmail.com/"><TfiEmail className="email" /></a>
-            <a href="https://www.linkedin.com/in/favour-naza-anajemba-02a156196"><FaLinkedin className="linkedin" /></a>
+            <a target="_blank" href="https://wa.me/2348167265619"><FaWhatsapp className="whatsapp"/></a>
+            <a target="_blank" href="https://www.twitter.com/TechSiz"><SlSocialTwitter className="twitter" /></a>
+            <a target="_blank" href="https://github.com/naz-coder"><FaGithub className="github"/></a>
+            <a target="_blank" href="mailto:nazanajemba@gmail.com/"><TfiEmail className="email" /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/favour-naza-anajemba-02a156196"><FaLinkedin className="linkedin" /></a>
           </div>
         </div>
       </div>
