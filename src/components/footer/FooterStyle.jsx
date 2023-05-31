@@ -73,6 +73,12 @@ p.last_p {
   font-size: 1.2rem;
 }
 
+.portfolio-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 a{
   text-decoration: none;
   color: #ffffff;

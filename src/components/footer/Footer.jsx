@@ -22,7 +22,7 @@ const Footer = () => {
         </Link>
         <a href="https://github.com/naz-coder">
         <div className="foot_item our-portfolio">
-          <BsSendCheck className="portfolio"/><p>Visit Our Website</p>
+          <a target="blank" href="https://nazanajemba.vercel.app/" className="portfolio-link"><BsSendCheck className="portfolio"/><p>Visit Our Website</p></a>
         </div>
         </a>
         <div className="foot_item contact-us">
